@@ -18,7 +18,10 @@ module.exports = () => ({
   },
   resolve: {
     extensions: ['...', '.js'],
-    mainFiles: ['index']
+    mainFiles: ['index'],
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    }
   },
   externals: {
     vue: 'Vue'

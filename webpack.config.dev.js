@@ -18,6 +18,7 @@ module.exports = () => ({
     extensions: ['...', '.js'],
     mainFiles: ['index'],
     alias: {
+      '@': path.resolve(__dirname, 'src'),
       vue$: 'vue/dist/vue.esm-browser.js'
     }
   },
